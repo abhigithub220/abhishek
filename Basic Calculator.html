@@ -39,25 +39,24 @@
 
                 <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
                 <input class="button digits" type="button" value="00" onclick="calculator.display.value += '00'">
+                
                 <input class="button mathButtons" type="button" value="." onclick="calculator.display.value += '.'">
                 <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += '/'">
+                
                 <input id="clearButton" class="button" type="button" value="AC" onclick="calculator.display.value = ''">
                 <input id="button" class="button" type="button" value="DE"
                     onclick="calculator.display.value = display.value.toString().slice(0,-1)">
+                
                 <input class="button mathButtons" type="button" value="%" onclick="calculator.display.value += '%'">
+                
                 <input class="button mathButtons" type="button" value="="
                     onclick="calculator.display.value = eval(calculator.display.value)">
                 <br>
 
                 <!-- <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)"> -->
                 <!-- <input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"> -->
-
-
-
             </form>
-
         </fieldset>
     </div>
 </body>
-
 </html>
